@@ -1,5 +1,11 @@
 # road-closures-map-data
-Get data from the road closures map, restructure it, save it
+
+### What we are trying to do
+Get data from the City of Orlando [Road Closures Map](http://www.arcgis.com/apps/webappviewer/index.html?id=80f863e226c948b496d27b179d924f93), restructure it, save it
+
+Check the [Issues](https://github.com/cforlando/road-closures-map-data/issues) to see what we working on. If you have any questions, feel free to submit an issue!
+
+Look further down in the README for Project Resources
 
 ## Project Lead: Cassie Wilcox @csndra0504
 ## Stakeholders: Scott Walker, Natalie Bednarz - City of Orlando
@@ -9,7 +15,7 @@ Road Closures Map Data project is a follow up to the [UX project](https://github
 Our goal is to create a solution that will have 2 outcomes:
 
 1. Make Scott's job easier, not harder. 
-2. Output data in an open format to the Data Portal to be used in a map solution available to the public. 
+2. Output data in an open format to the Data Portal to be used in a map solution available to the public.
 
 ### Resources
 - [Road Closures Website](http://www.cityoforlando.net/roadclosure/)
@@ -17,6 +23,7 @@ Our goal is to create a solution that will have 2 outcomes:
 - [Road Closure API from ArcGIS](http://www2.cityoforlando.net/arcgis/rest/services/Traffic_Control/Road_Closures/MapServer/1)
 - [Open 511 Road Event Data Format](http://www.open511.org/)
 - [Orlando's Open Data Portal](https://data.cityoforlando.net/)
+- [Waze Major Traffic Events](https://www.waze.com/events)
 
 ### Todos:
 1. Server???
