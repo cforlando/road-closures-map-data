@@ -28,7 +28,7 @@ Our goal is to create a solution that will have 2 outcomes:
 ### Todos:
 1. Server???
 2. Database???
-3. Get data???
+3. Get data [in progress, see issues]
 4. Process Data???
 5. Save Data???
 6. Put Data in Open Data Portal???
