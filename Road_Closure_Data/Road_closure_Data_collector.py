@@ -3,10 +3,9 @@ import requests
 import csv
 import json
 
-Closure = []
-When = []
-Event = []
-Data = []
+Closure_Downtown = []
+When_Downtown = []
+Event_Downtown = []
 count = 0
 
 url = "http://www.cityoforlando.net/roadclosure/"
@@ -18,22 +17,22 @@ if (req.status_code == 200):
     results = soup.find_all("strong")
     for item in results:
         if item.get_text() == "Closure":
-            Closure.append(results[count+1].get_text())
+            Closure_Downtown.append(results[count+1].get_text())
         elif item.get_text() == "When":
-            When.append(results[count+1].get_text())
+            When_Downtown.append(results[count+1].get_text())
         elif item.get_text() == "Event":
-            Event.append(results[count+1].get_text())
+            Event_Downtown.append(results[count+1].get_text())
         count += 1
-    with open("Road_Closure_Data.csv",'w') as csv_file:
+    with open("Road_Closure_Data_Downtown.csv",'w') as csv_file:
         csv_file.write('Closure,When,Event\n')
 
-        for r,h,l in zip(Closure,When,Event):
+        for r,h,l in zip(Closure_Downtown,When_Downtown,Event_Downtown):
             line = '"'+r+'"' + ',' + '"'+h +'"' + ',' + '"'+ l+'"'
             csv_file.write(line)
             csv_file.write('\n')
 
-    csvfile = open('Road_Closure_Data.csv', 'r')
-    jsonfile = open('Road_Closure_Data.json', 'w')
+    csvfile = open('Road_Closure_Data_Downtown.csv', 'r')
+    jsonfile = open('Road_Closure_Data_Downtown.json', 'w')
 
     fieldnames = ("Closure", "When", "Event")
     reader = csv.DictReader(csvfile, fieldnames)
@@ -41,6 +40,6 @@ if (req.status_code == 200):
         json.dump(row, jsonfile)
         jsonfile.write('\n')
 
-    print(Closure,"\n")
-    print(When,"\n")
-    print(Event,"\n")
+    print(Closure_Downtown,"\n")
+    print(When_Downtown,"\n")
+    print(Event_Downtown,"\n")
