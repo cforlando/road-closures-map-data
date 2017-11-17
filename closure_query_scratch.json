@@ -1,0 +1,168 @@
+/*
+http://www2.cityoforlando.net/arcgis/rest/services/Traffic_Control/Road_Closures/MapServer/0/query
+?f=json
+&returnGeometry=true (optional)
+&spatialRel=esriSpatialRelIntersects (optional)
+&maxAllowableOffset=27 (optional)
+&geometry=%7B%22xmin%22%3A526553.0223197541%2C%22ymin%22%3A1528710.4593835815%2C%22xmax%22%3A526886.3556530875%2C%22ymax%22%3A1529043.7927169148%2C%22spatialReference%22%3A%7B%22wkid%22%3A102658%2C%22latestWkid%22%3A2236%7D%7D (required)
+&geometryType=esriGeometryEnvelope
+&inSR=102658 (optional)
+&outFields=OBJECTID%2CLocation%2CWhen_%2CEvent%2CContact_Information%2CWebsite%2CMore_Information%2CGlobalID%2Ccreated_user%2Ccreated_date%2Clast_edited_user%2Clast_edited_date%2CDate_Start%2CDate_End
+&outSR=102658
+
+http://www2.cityoforlando.net/arcgis/rest/services/Traffic_Control/Road_Closures/MapServer/0/query
+?f=json
+&returnGeometry=true
+&spatialRel=esriSpatialRelIntersects
+&maxAllowableOffset=27
+&geometry=%7B%22xmin%22%3A534747.4667641986%2C%22ymin%22%3A1528432.6816058038%2C%22xmax%22%3A535080.8000975319%2C%22ymax%22%3A1528766.014939137%2C%22spatialReference%22%3A%7B%22wkid%22%3A102658%2C%22latestWkid%22%3A2236%7D%7D
+&geometryType=esriGeometryEnvelope
+&inSR=102658
+&outFields=OBJECTID%2CLocation%2CWhen_%2CEvent%2CContact_Information%2CWebsite%2CMore_Information%2CGlobalID%2Ccreated_user%2Ccreated_date%2Clast_edited_user%2Clast_edited_date%2CDate_Start%2CDate_End
+&outSR=102658
+
+
+http://www2.cityoforlando.net/arcgis/rest/services/Traffic_Control/Road_Closures/MapServer/2/query?
+f=json
+&returnGeometry=true
+&spatialRel=esriSpatialRelIntersects
+&maxAllowableOffset=55
+&geometry=%7B%22xmin%22%3A530858.5778753099%2C%22ymin%22%3A1525835.4593835815%2C%22xmax%22%3A531525.2445419765%2C%22ymax%22%3A1526502.1260502483%2C%22spatialReference%22%3A%7B%22wkid%22%3A102658%2C%22latestWkid%22%3A2236%7D%7D
+&geometryType=esriGeometryEnvelope
+&inSR=102658
+&outFields=OBJECTID%2CLocation%2CWhen_%2CEvent%2CContact_Information%2CGlobalID%2CWebsite%2Ccreated_user%2Ccreated_date%2Clast_edited_user%2Clast_edited_date%2CDate_Start%2CDate_End
+&outSR=102658
+*/
+{
+  "displayFieldName": "Location",
+  "fieldAliases": {
+    "OBJECTID": "OBJECTID",
+    "Location": "Location",
+    "When_": "When",
+    "Event": "Event",
+    "Contact_Information": "Contact",
+    "Website": "Website",
+    "More_Information": "More Information",
+    "GlobalID": "GlobalID",
+    "created_user": "created_user",
+    "created_date": "created_date",
+    "last_edited_user": "last_edited_user",
+    "last_edited_date": "last_edited_date",
+    "Date_Start": "Date_Start",
+    "Date_End": "Date_End"
+  },
+  "geometryType": "esriGeometryPoint",
+  "spatialReference": {
+    "wkid": 102658,
+    "latestWkid": 2236
+  },
+  "fields": [
+    {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID"
+    },
+    {
+      "name": "Location",
+      "type": "esriFieldTypeString",
+      "alias": "Location",
+      "length": 200
+    },
+    {
+      "name": "When_",
+      "type": "esriFieldTypeString",
+      "alias": "When",
+      "length": 200
+    },
+    {
+      "name": "Event",
+      "type": "esriFieldTypeString",
+      "alias": "Event",
+      "length": 200
+    },
+    {
+      "name": "Contact_Information",
+      "type": "esriFieldTypeString",
+      "alias": "Contact",
+      "length": 200
+    },
+    {
+      "name": "Website",
+      "type": "esriFieldTypeString",
+      "alias": "Website",
+      "length": 200
+    },
+    {
+      "name": "More_Information",
+      "type": "esriFieldTypeString",
+      "alias": "More Information",
+      "length": 150
+    },
+    {
+      "name": "GlobalID",
+      "type": "esriFieldTypeGlobalID",
+      "alias": "GlobalID",
+      "length": 38
+    },
+    {
+      "name": "created_user",
+      "type": "esriFieldTypeString",
+      "alias": "created_user",
+      "length": 255
+    },
+    {
+      "name": "created_date",
+      "type": "esriFieldTypeDate",
+      "alias": "created_date",
+      "length": 36
+    },
+    {
+      "name": "last_edited_user",
+      "type": "esriFieldTypeString",
+      "alias": "last_edited_user",
+      "length": 255
+    },
+    {
+      "name": "last_edited_date",
+      "type": "esriFieldTypeDate",
+      "alias": "last_edited_date",
+      "length": 36
+    },
+    {
+      "name": "Date_Start",
+      "type": "esriFieldTypeDate",
+      "alias": "Date_Start",
+      "length": 36
+    },
+    {
+      "name": "Date_End",
+      "type": "esriFieldTypeDate",
+      "alias": "Date_End",
+      "length": 36
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "OBJECTID": 1601,
+        "Location": "Camping World Stadium",
+        "When_": null,
+        "Event": null,
+        "Contact_Information": null,
+        "Website": "http://www.campingworldstadium.com/",
+        "More_Information": null,
+        "GlobalID": "{1B373C0E-FAC8-48BE-A586-E5523FFA0DF8}",
+        "created_user": null,
+        "created_date": null,
+        "last_edited_user": "Esri_Anonymous",
+        "last_edited_date": 1501788421000,
+        "Date_Start": 946684800000,
+        "Date_End": 7258118400000
+      },
+      "geometry": {
+        "x": 526763,
+        "y": 1528906
+      }
+    }
+  ]
+}
