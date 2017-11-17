@@ -3,7 +3,7 @@
 ## Run Locally
 To fetch latest road closure data run
 ```
-python road_data_fetch.json
+python road_data_fetch.py
 ```
 This will output JSON data from [Orlando's Road Closures Map](http://www.arcgis.com/apps/webappviewer/index.html?id=80f863e226c948b496d27b179d924f93) to `road_data.json`
 
